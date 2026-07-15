@@ -213,7 +213,7 @@ let open_files ~options ~classname =
   println "       //maybe unregister global root?";
   println "    }";
   println "    _camlobjHolder = x;";
-  println "    register_global_root(&_camlobjHolder);";
+  println "    caml_register_global_root(&_camlobjHolder);";
   println "  }\n";
   let () =
     if Options.is_itemmodel options then (
