@@ -43,7 +43,7 @@ module QVariant = struct
 
   let empty = `empty
   let of_string s = `string s
-  let of_object o = `qobject { obj = o }
+  let of_object (type a) (o: a cppobj) = `qobject { obj = o }
   let of_int x = `int x
   let of_bool b = `bool b
   let of_float f = `float f
