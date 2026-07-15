@@ -1,5 +1,5 @@
 (executable
- (name discover)
+ (name discover) (package lablqml) (public_name lablqml.config)
  (libraries base stdio dune-configurator))
 
 (rule
